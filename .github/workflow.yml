@@ -1,0 +1,9 @@
+jobs:
+  build:
+    runs-on: docker-runner
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: test
+        run: |
+          docker -v
